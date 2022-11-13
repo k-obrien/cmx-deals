@@ -1,5 +1,6 @@
 plugins {
-  kotlin("multiplatform") version "1.7.21"
+  @Suppress("DSL_SCOPE_VIOLATION")
+  alias(libs.plugins.kotlin.multiplatform)
 }
 
 group = "network.obrien"
