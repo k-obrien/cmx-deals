@@ -30,7 +30,13 @@ kotlin {
   }
 
   sourceSets {
-    val nativeMain by getting
+    val nativeMain by getting {
+      dependencies {
+        implementation(libs.ktor.client.core)
+        implementation(libs.ktor.client.engine)
+      }
+    }
+
     val nativeTest by getting
   }
 }
