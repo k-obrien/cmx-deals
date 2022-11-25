@@ -32,6 +32,7 @@ kotlin {
   sourceSets {
     val nativeMain by getting {
       dependencies {
+        implementation(libs.clikt)
         implementation(libs.ktor.client.core)
         implementation(libs.ktor.client.engine)
       }

@@ -1,8 +1,10 @@
 [versions]
 kotlin = "1.7.21"
+clikt = "3.5.0"
 ktor = "2.1.3"
 
 [libraries]
+clikt = { module = "com.github.ajalt.clikt:clikt", version.ref = "clikt" }
 ktor-client-core = { module = "io.ktor:ktor-client-core", version.ref = "ktor" }
 ktor-client-engine = { module = "io.ktor:ktor-client-curl", version.ref = "ktor" }
 
